@@ -625,8 +625,10 @@ body {
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
+    align-items: stretch;
+    min-width: 0;
 }
 
 .info-card {
@@ -667,6 +669,39 @@ body {
 .info-text {
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.info-card .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.info-card .social-links a {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    white-space: normal;
+    box-sizing: border-box;
+}
+
+.info-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.info-card p {
+    margin: 0.35rem 0;
+    color: var(--text-gray);
+    line-height: 1.4;
 }
 
 .contact-link {
