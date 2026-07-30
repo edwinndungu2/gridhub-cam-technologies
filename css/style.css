@@ -664,6 +664,8 @@ body {
 .info-card p {
     margin: 0.5rem 0;
     color: var(--text-gray);
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .info-text {
