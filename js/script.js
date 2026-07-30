@@ -271,7 +271,7 @@ setInterval(() => {
 
 // ==================== CONSOLE LOG ====================
 console.log('%cWelcome to GridHub Cam Technologies', 'font-size: 20px; color: #00d4ff; font-weight: bold;');
-console.log('%cContact: +254 706 230 252 | Email: ewairagu@gmail.com', 'font-size: 14px; color: #00d946;');
+console.log('%cContact: +254 111 664 343 | Email: ewairagu@gmail.com', 'font-size: 14px; color: #00d946;');
 console.log('%cAvailable 24/7 on WhatsApp', 'font-size: 12px; color: #00d946; font-weight: bold;');
 
 // ==================== RESPONSIVE NAVIGATION FIX ====================
