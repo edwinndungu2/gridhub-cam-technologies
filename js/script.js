@@ -237,6 +237,34 @@ window.addEventListener('scroll', function() {
 
 // ==================== SHOP PRODUCTS BUTTON ====================
 document.addEventListener('DOMContentLoaded', function() {
+    const productFilters = document.querySelectorAll('.product-filter');
+    const productCards = document.querySelectorAll('.product-card[data-product-category]');
+    const productFilterStatus = document.querySelector('.product-filter-status');
+
+    productFilters.forEach(filter => {
+        filter.addEventListener('click', function() {
+            const category = this.dataset.filter;
+            let visibleCount = 0;
+
+            productFilters.forEach(button => {
+                const isActive = button === this;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+            });
+
+            productCards.forEach(card => {
+                const isVisible = category === 'all' || card.dataset.productCategory === category;
+                card.classList.toggle('is-filtered-out', !isVisible);
+                if (isVisible) visibleCount += 1;
+            });
+
+            const categoryLabel = this.textContent.trim().replace(/\s+\d+$/, '').toLowerCase();
+            productFilterStatus.textContent = category === 'all'
+                ? `Showing all ${visibleCount} products`
+                : `Showing ${visibleCount} ${categoryLabel} ${visibleCount === 1 ? 'product' : 'products'}`;
+        });
+    });
+
     const shopButton = document.querySelector('.btn-shop');
     if (shopButton) {
         shopButton.addEventListener('click', function() {

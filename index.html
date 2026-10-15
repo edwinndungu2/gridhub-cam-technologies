@@ -74,10 +74,19 @@
     <section id="products" class="products">
         <h2>Our Products</h2>
         <p class="section-subtitle">Cutting-edge technology for your safety and convenience</p>
-        
-        <div class="products-grid">
+
+        <div class="product-filters" role="group" aria-label="Filter products by category">
+            <button type="button" class="product-filter active" data-filter="all" aria-pressed="true">All products <span>06</span></button>
+            <button type="button" class="product-filter" data-filter="security" aria-pressed="false">Security</button>
+            <button type="button" class="product-filter" data-filter="vehicle" aria-pressed="false">Vehicle</button>
+            <button type="button" class="product-filter" data-filter="smart-home" aria-pressed="false">Smart home</button>
+            <button type="button" class="product-filter" data-filter="accessories" aria-pressed="false">Accessories</button>
+            <p class="product-filter-status" aria-live="polite">Showing all 6 products</p>
+        </div>
+
+        <div class="products-grid" id="productGrid">
             <!-- Product 1: Wireless CCTV -->
-            <a href="products/cctv-cameras.html" class="product-card product-link">
+            <a href="products/cctv-cameras.html" class="product-card product-link" data-product-category="security">
                 <div class="product-card-image">
                     <img src="images/outdoor security wifi camera.jpeg" alt="Outdoor wireless security camera" loading="lazy">
                 </div>
@@ -96,7 +105,7 @@
             </a>
 
             <!-- Product 2: Dashcams -->
-            <a href="products/dashcams.html" class="product-card product-link">
+            <a href="products/dashcams.html" class="product-card product-link" data-product-category="vehicle">
                 <div class="product-card-image">
                     <img src="images/balhuo screen dashcam.jpeg" alt="Balhuo screen dashcam" loading="lazy">
                 </div>
@@ -115,7 +124,7 @@
             </a>
 
             <!-- Product 3: Hidden Cameras -->
-            <a href="products/hidden-cameras.html" class="product-card product-link">
+            <a href="products/hidden-cameras.html" class="product-card product-link" data-product-category="security">
                 <div class="product-card-image">
                     <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Security camera for discreet property monitoring" loading="lazy">
                 </div>
@@ -134,7 +143,7 @@
             </a>
 
             <!-- Product 4: Smart Lights -->
-            <a href="products/smart-lights.html" class="product-card product-link">
+            <a href="products/smart-lights.html" class="product-card product-link" data-product-category="smart-home">
                 <div class="product-card-image">
                     <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Modern interior illuminated by smart lighting" loading="lazy">
                 </div>
@@ -153,7 +162,7 @@
             </a>
 
             <!-- Product 5: Electronics -->
-            <a href="products/electronics.html" class="product-card product-link">
+            <a href="products/electronics.html" class="product-card product-link" data-product-category="accessories">
                 <div class="product-card-image">
                     <img src="images/magnetic car wireless charger.jpeg" alt="Magnetic wireless car charger" loading="lazy">
                 </div>
@@ -173,7 +182,7 @@
             </a>
 
             <!-- Product 6: Motion Sensors -->
-            <a href="products/motion-sensors.html" class="product-card product-link">
+            <a href="products/motion-sensors.html" class="product-card product-link" data-product-category="security">
                 <div class="product-card-image">
                     <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Smart home security and motion detection system" loading="lazy">
                 </div>
