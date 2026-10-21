@@ -96,15 +96,17 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 0.25rem;
+    padding-left: 0.85rem;
+    border-left: 1px solid rgba(212, 177, 91, 0.42);
     white-space: nowrap;
 }
 
 .brand-name {
-    color: #f5e2b0;
+    color: #f3eee0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 0.035em;
+    letter-spacing: 0.025em;
 }
 
 .brand-subtitle {
@@ -2300,15 +2302,20 @@ select:focus-visible {
     }
 
     .logo-box {
-        width: 60px;
+        width: 56px;
     }
 
     .brand-name {
-        font-size: 0.78rem;
+        font-size: clamp(0.66rem, 3.3vw, 0.76rem);
     }
 
     .brand-subtitle {
-        font-size: 0.53rem;
+        font-size: clamp(0.48rem, 2.25vw, 0.52rem);
+        letter-spacing: 0.09em;
+    }
+
+    .brand-text {
+        padding-left: 0.65rem;
     }
 
     .navbar {
