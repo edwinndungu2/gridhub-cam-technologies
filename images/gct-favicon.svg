@@ -1,29 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GridHub Cam Technologies favicon">
-  <defs>
-    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#fff1b3"/>
-      <stop offset="18%" stop-color="#f7d979"/>
-      <stop offset="42%" stop-color="#d7a938"/>
-      <stop offset="62%" stop-color="#ffeb9a"/>
-      <stop offset="100%" stop-color="#b57d1d"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="512" height="512" rx="72" fill="#070707"/>
-
-  <g>
-    <text x="256" y="330" text-anchor="middle"
-          font-family="Segoe UI, Arial Black, Arial, sans-serif"
-          font-size="250"
-          font-weight="900"
-          letter-spacing="-24"
-          fill="url(#gold)"
-          stroke="#d8aa3d"
-          stroke-width="6"
-          paint-order="stroke fill">GCT</text>
-  </g>
-
-  <circle cx="228" cy="164" r="27" fill="#0d0d0d" stroke="url(#gold)" stroke-width="10"/>
-  <circle cx="228" cy="164" r="11" fill="#f4d778"/>
-  <circle cx="228" cy="164" r="4" fill="#141414"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Bold gold G.C.T. favicon">
+  <rect x="8" y="8" width="496" height="496" rx="82" fill="#09111f"/>
+  <rect x="22" y="22" width="468" height="468" rx="68" fill="none" stroke="#d9ad58" stroke-width="12"/>
+  <rect x="39" y="39" width="434" height="434" rx="54" fill="none" stroke="#26364d" stroke-width="3"/>
+  <text x="256" y="346" text-anchor="middle" fill="#e8bd68" stroke="#09111f" stroke-width="5"
+        paint-order="stroke fill" font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="140" font-weight="900" letter-spacing="-2">G.C.T</text>
 </svg>
