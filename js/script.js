@@ -186,8 +186,8 @@ window.addEventListener('scroll', function() {
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
     }
 `;
 document.head.appendChild(style);
